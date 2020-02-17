@@ -1,0 +1,22 @@
+{
+  "name": "starship",
+  "version": "1.0.0",
+  "description": "projet js starship",
+  "main": "./scripts/main.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "hotloader": "webpack-dev-server --open"
+  },
+  "author": "Krol Mikolaï / Bart Sébastien",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
