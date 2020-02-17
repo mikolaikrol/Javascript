@@ -1,0 +1,105 @@
+/** -----------------------------------Base------------------------------------------- **/
+
+html {
+  background-color : rgba(0,0,0,0.5);
+}
+
+#field {
+    background-color: white;
+    border : 10px solid black;
+    margin-left: 10%; 
+}
+
+span {
+  background-color: white;
+  border : 5px solid black;
+  padding: 10px;
+  font-size: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/** -----------------------------------Header------------------------------------------------------- **/
+
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header ul {
+  text-align: center;
+  
+}
+
+header > ul > li {
+  display: inline-block;
+  background-color: black;
+  text-align: center;
+  margin: 10px
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+}
+/** ------------------Message First Player / Second Player -----------------------------------------**/
+
+#message{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+/** ------------------------------Tchat-------------------------------------------------------------- **/
+
+#field, #chat {
+  display: inline-block;
+}
+
+#chat {
+  width: 400px;
+  height: 600px;
+  border: 10px solid black;
+  position: fixed;
+  margin-left: 50px;
+}
+
+input, button {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+}
+
+form{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+}
+
+button{
+  width: 20%;
+}
+input{
+  width: 75%;
+}
+#chat > li{
+  background-color: crimson;
+}
+#chat > li.me {
+  background-color: chartreuse;
+}
+
+/** ------------------------------Online / Offline ----------------------------------------**/
+
+span.online {
+  background-color: green;
+}
+
+span.offline {
+  background-color: red;
+}
