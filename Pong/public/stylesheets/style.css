@@ -1,97 +1,194 @@
 /** -----------------------------------Base------------------------------------------- **/
 
-html {
-  background-color : rgba(0,0,0,0.5);
+body {
+  background-color : rgb(219, 233, 255);
 }
 
 #field {
-    background-color: white;
-    border : 10px solid black;
-    margin-left: 10%; 
+  background-color: white;
+  border : 10px solid black;
+  margin-left: 40px;
 }
 
-span {
+h1 {
   background-color: white;
-  border : 5px solid black;
-  padding: 10px;
+  width: 70%;
+  padding: 5px;
+  border-radius: 100px;
+  border: solid black 2px;
+  font-weight: initial;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #bfd0f9;
+  padding: 30px;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+span#opponent {
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  border: solid black 1px;
+  padding: 10px 0px;
+  margin-bottom:  40px;
+}
+
+#score {
+  background-color: white;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
   font-size: 40px;
-  margin-right: 50px;
-  margin-left: 50px;
+  border: solid 1px;
+}
+
+#score #p1 {
+  margin-right: 60px;
+}
+
+#score #p2 {
+  margin-left: 60px;
+}
+
+#p1:before {
+  content: "You :";
+  font-size: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#p2:before {
+  content: "Opponent :";
+  font-size: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#p1:after {
+  content: "pts";
+  font-size: 12px;
+}
+
+#p2:after {
+  content: "pts";
+  font-size: 12px;
 }
 
 /** -----------------------------------Header------------------------------------------------------- **/
 
 header {
-  width: 100%;
+  width: max-content;
+  margin: auto auto 40px auto;
   background-color: white;
+  border-radius: 10px;
+  border: solid 2px black;
 }
 
 header ul {
   text-align: center;
-  
+  padding: 0px 50px; 
 }
 
 header > ul > li {
-  display: inline-block;
-  background-color: black;
-  text-align: center;
-  margin: 10px
+  display: inline;
 }
 
 header a {
+  background-color: #668dec;
+  display: inline;
   color: white;
   text-decoration: none;
-  height: 40px;
   width: 100px;
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
+  padding: 6px 8px;
+  border-radius: 10px;
 }
+
+header a:hover {
+  background-color: rgb(223, 110, 110);
+}
+
 /** ------------------Message First Player / Second Player -----------------------------------------**/
 
 #message{
-  display: block;
-  margin: auto;
+  position: fixed;
   text-align: center;
-  width: 70%;
-  margin-bottom: 10px;
+  width: 10%;
+  border: 1px solid white;
+  font-size: 20px;
+  left: 0;
+  top: 0;
+  background-color: rgb(241, 244, 137);
+  padding: 10px;
 }
 
 /** ------------------------------Tchat-------------------------------------------------------------- **/
 
 #field, #chat {
-  display: inline-block;
+  display: inline;
 }
 
 #chat {
   width: 400px;
   height: 600px;
   border: 10px solid black;
-  position: fixed;
-  margin-left: 50px;
-}
-
-input, button {
-  display: inline-block;
-  position: relative;
-  height: 60px;
+  position: absolute;
+  right: 10px;
+  background-color: rgb(81, 128, 200);
 }
 
 form{
+  margin: auto;
+  width: 80%;
   position: absolute;
-  bottom:0;
-  width: 100%;
+  bottom: 5px;
 }
 
-button{
-  width: 20%;
+input {
+  width: 60%;
+  height: 50px;
 }
-input{
-  width: 75%;
+
+button {
+  width: 25%;
+  height: 50px;
 }
-#chat > li{
-  background-color: crimson;
+
+#chat li{
+  list-style: disc;
+  margin-bottom: 5px;
+  width: 80%;
+  color: white;
 }
-#chat > li.me {
-  background-color: chartreuse;
+
+#chat li.me {
+  list-style: circle;
+}
+
+ul#messages {
+  margin: 0;
+  width: 90%;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  border-bottom: solid black 1px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 85%;
+  background-color: rgb(60, 124, 206);
 }
 
 /** ------------------------------Online / Offline ----------------------------------------**/
@@ -101,5 +198,5 @@ span.online {
 }
 
 span.offline {
-  background-color: red;
+  background-color: #b90000;
 }
