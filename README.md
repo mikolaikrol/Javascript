@@ -1,5 +1,6 @@
-# Javascript
+Dépôt des projets de l'option JS de Sébastien Bart et Mikolaï Krol.
+(Dans chaque dossier pour un projet, un README)
 
-Dépot contenant mes projets Javascript :
-* Space Invader
-* Pong en réseau
+- Projet 1 : Starship
+- Projet 2 : Pong
+- Projet 3 : Factures
