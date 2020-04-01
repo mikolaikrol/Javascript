@@ -1,0 +1,60 @@
+.client {
+    margin: auto;
+    background: lightcoral;
+    width: 90%;
+    height: max-content;
+    margin-top: 10px;
+    padding: 5px 0px;
+    text-align: center;
+    color: black;
+    padding-bottom: 0px;
+    display: block;
+    position:relative;
+}
+
+#dataPart .client {
+    display: inline-block;
+    width: 300px;
+    margin: 10px 15px 10px 15px
+}
+
+#dataPart .client:hover{
+    cursor: pointer;
+    background-color: lightsalmon;
+    color: white;
+}
+
+.client > button {
+    position: absolute;
+    right: 5px;
+    border: none;
+    height: 70%;
+    background: green;
+    color: white;
+}
+
+.client > button:hover{
+    background: red;
+    color: black;
+    cursor: pointer;
+}
+
+.client span {
+    display: block;
+    padding: 3px;
+}
+
+span.electricity {
+    color: black;
+    background: lightgoldenrodyellow
+}
+
+span.gaz {
+    color: black;
+    background: lightskyblue;
+}
+
+span.water {
+    color: black;
+    background: lightblue;
+}

@@ -1,0 +1,25 @@
+#createClient{
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#createClient > input {
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#createClient > button {
+    position: absolute;
+    border: none;
+    height: 32px;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+#createClient >button:hover {
+    background: saddlebrown;
+}
